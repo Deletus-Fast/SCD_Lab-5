@@ -5,7 +5,7 @@ const projectSchema = new mongoose.Schema({
     name: String,
     description: String,
     completionTime: Date,
-    createdBy: { type: mongoose.Schema.Types.ObjectId, ref: 'User' }
+    createdBy: Number, //userID
 });
 
 module.exports = mongoose.model('Project', projectSchema);
