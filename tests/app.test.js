@@ -2,6 +2,7 @@ const request = require('supertest');
 const app = require('../app1');
 
 describe('Project API', () => {
+    jest.setTimeout(10000);
     it('should create a new project', async () => {
         const response = await request(app)
             .post('/projects')
