@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json()); 
 app.use(express.urlencoded({ extended: true }));  
 
-mongoose.connect('mongodb://127.0.0.1:27017/collaborationApp')
+mongoose.connect('mongodb+srv://talalkhan0804:1234657899870@cluster0.llgvpyi.mongodb.net/')
 
 // Routes
 app.use('/user', authRoutes);
